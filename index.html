@@ -7,45 +7,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
   
-    <form class="form">
+    <form class="form" action="/contact" method="post">
         <h2 class="form__title"> Контактная форма </h2>
-         <label class="form__label"> 
+        <fieldset>
+        <label class="form__label"> 
            Телефон
-            <input type="tel"
-             name="phone"
-             placeholder="Ваш телефон"
-             required
-             pattern="^\+380\d{9}$"
-
-             />
+            <input type="tel" name="phone" placeholder="Ваш телефон"  required pattern="^\+380\d{9}$"/ autocomplete="tel">
          </label>
 
             <label class = "form__label">
                 Email
-                <input type="email"
-                 name="email"
-                 placeholder="Ваш email"
-                required
-                 />                     
+                <input type="email" name="email" placeholder="you@example.com" required/>                     
             </label>
 
              <label class="form__label">
                 Ссылка
-                <input type="url"
-                 name="link"
-                 placeholder="" 
-                 required
-                 />
+                <input type="url" name="link" type="url" placeholder="https://example.com" required/>
+                </label>
+                <label class="form__checkbox">
+                    <input type="checkbox" required>
+                    Cогласен с обработкой персональных данных
                 </label>
 
-            <button class="form__button" type="submit"> Отправить 
-
-            </button>
-                      
+            <button class="form__button" type="submit"> Отправить </button>
+             </fieldset>         
 
     </form>
 </body>
