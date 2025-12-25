@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
   
@@ -16,7 +16,9 @@
         <fieldset>
         <label class="form__label"> 
            Телефон
-            <input type="tel" name="phone" placeholder="Ваш телефон" required pattern="^\+380\d{9}$" autocomplete="tel">
+           
+            <input type="tel"name="phone"placeholder="+380 67 123 45 67"requiredautocomplete="tel" inputmode="tel" pattern="[\d\s\+\-\(\)]{9,20}" title="Enter a valid phone number">
+
          </label>
 
             <label class = "form__label">
